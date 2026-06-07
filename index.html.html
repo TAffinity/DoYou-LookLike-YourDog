@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beloved dogs 🐶</title>
+    <style>
+      body {
+        background-color: rgb(253, 241, 108, 0.7);
+      }
+      div {
+        background-image: -webkit-linear-gradient(
+          top,
+          rgb(83, 231, 69),
+          rgb(42, 119, 35)
+        );
+        border: 1px solid rgba(85, 208, 74);
+        border-radius: 15px;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        color: #ffff;
+        border: 2px solid rgb(253, 241, 108);
+        border-radius: 4px;
+        padding: 10px 30px;
+      }
+      h2 {
+        text-align: center;
+        color: #ffff;
+      }
+      hr {
+        height: 1px;
+        background-color: rgb(253, 241, 108);
+        border: none;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        border: 6px solid rgb(253, 241, 108);
+        max-width: 80%;
+      }
+      p {
+        text-align: center;
+        line-height: 1.5;
+        font-size: 18px;
+        color: #ffff;
+        margin: 10 10 auto;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        padding: 15px 40px;
+        background: rgb(253, 241, 108);
+        color: rgba(45, 118, 38);
+        font-size: 22px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.6);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .other {
+        font-weight: bolder;
+        color: rgb(253, 241, 108);
+      }
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+      .See-more {
+        color: rgb(253, 241, 108);
+        text-decoration: none;
+        font-size: 14px;
+      }
+      .See-more:hover {
+        text-decoration: underline;
+      }
+      .Read-more {
+        color: rgb(253, 241, 108);
+        text-decoration: none;
+        font-size: 14px;
+      }
+      .Read-more:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+        color: rgb(253, 241, 108);
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🐾 Dogs look like their owners</h1>
+      <h2>
+        <span class="other">Or vice versa?</span> That is the question! 🐶
+      </h2>
+      <hr />
+      <br />
+      <p>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/228/original/Dogs_final.jpg?1681575360"
+          alt="Dogs look like their owners"
+        />
+      </p>
+      <br />
+      <hr />
+      <p>
+        Studies that ask participants to match dogs with their owners reveal
+        that pooches do indeed often resemble their people. One reason could be
+        that familiarity breeds content. We love our human family and so are
+        drawn to dogs with similar features, but the phenomenon could also be a
+        spin-off from the way we have evolved to choose our human mates.
+        <a
+          href="https://www.insider.com/humans-dogs-identical-2018-9"
+          target="_blank"
+          class="See-more"
+        >
+          <em>See more pictures</em>
+        </a>
+      </p>
+      <a
+        href="https://www.nextavenue.org/do-our-dogs-look-and-act-more-us-over-time"
+        target="_blank"
+        class="Read-more"
+      >
+        <em>Read more scientific reasoning</em>
+      </a>
+      <hr />
+      <p>
+        <strong>
+          If you want to share a photo of you and your dog, click the button
+          below!
+        </strong>
+      </p>
+      <button class="download-button">Download your photo 🐾</button>
+      <p class="footer">
+        Coded by Tatiana Bugulova with HTML, CSS and JavaScript
+      </p>
+    </div>
+    <script>
+      function downloady() {
+        let name = prompt("What is you name?");
+        let have = prompt("How many dogs do you have?");
+        if (have > 0) {
+          let dogname = prompt("What is your dogs' name?");
+          let email = prompt("What is your e-mail address");
+          alert(
+            "Thank you " +
+              name +
+              "! We will be in touch by email. Have a wonderful time with your " +
+              dogname +
+              "! 🐾"
+          );
+        } else {
+          alert("Sorry " + name + "... You can't take part in the project 🙁");
+        }
+      }
+      let downloadbutton = document.querySelector(".download-button");
+      downloadbutton.addEventListener("click", downloady);
+    </script>
+  </body>
+</html>
